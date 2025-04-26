@@ -1,24 +1,34 @@
 nav {
-    width: 100%; height: 10vh;
+    width: 100%;
+    height: 10vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 5%;
     position: fixed;
-    top: 0; left: 0;
+    top: 0;
+    left: 0;
     z-index: 5;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     background-color: white;
-} nav img {
-    width: 180px; height: 50px;
-} nav ul {
+    z-index: 99;
+}
+
+nav img {
+    width: 180px;
+    height: 50px;
+}
+nav ul,
+.uel2 {
     list-style: none;
     display: flex;
     justify-content: end;
     align-items: center;
     width: 30%;
     column-gap: 5%;
-} .navLink {
+    transition: 0.3s ease;
+}
+.navLink {
     text-decoration: none;
     color: #333;
     transition: 0.3s;
@@ -34,45 +44,48 @@ nav {
     justify-content: center;
     column-gap: 10px;
     align-items: center;
-} .navLink:hover, .navLink.active {
+}
+.navLink:hover,
+.navLink.active {
     color: white;
     background-color: #004da9;
-} nav #navToggler {
+}
+nav #navToggler {
+    width: 50px;
     display: none;
-    padding: 6px 10px;
-    background-color: transparent;
     cursor: pointer;
-    border: 2px solid #333;
-    border-radius: 50%;
 }
 
-
-@media screen and (max-width: 768px) {
-    nav ul {
-        width: 30%;
+@media screen and (max-width: 1060px) {
+    #uel {
+        display: none;
     }
-    
-} @media screen and (max-width: 576px) {
-    /* nav #navToggler {
+
+    .uel2 {
+        position: fixed;
+        width: 100%;
+        height: 300px;
+        top: -30vh;
+        left: 0;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: #fff;
+        border-bottom: 1px solid #00000018;
+        z-index: 90;
+    }
+
+    nav #navToggler {
         display: block;
     }
 
-    #uel {
-        position: absolute;
-        top: 10vh; left: -150vw;
-        width: 100%; height: 90vh;
-        background-color: ghostwhite;
-        display: flex; flex-direction: column;
-        align-items: center; justify-content: center;
-        row-gap: 10%; transition: 0.3s;
-    } #uel.acttive {
-        left: 0;
-    } */
+    .uel2.open {
+        top: 10vh;
+    }
+}
 
-    #uel {
-        width: 10%;
-        font-size: 10px;
-    } nav img {
-        width: 100px; height: 30px;
+@media screen and (max-width: 576px) {
+    nav img {
+        width: 100px;
+        height: 30px;
     }
 }
