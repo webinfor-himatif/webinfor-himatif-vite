@@ -1,0 +1,61 @@
+.header * {
+    z-index: 3;
+    position: relative;
+} .header {
+    margin-top: 10vh;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    width: 100%;
+    position: relative;
+} .text {
+    width: 70%;
+    color: #555;
+} .titlee {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    row-gap: 5%;
+    flex-direction: column;
+} .undertow {
+    position: absolute;
+    top: -20vh; left: -27vw;
+    width: 800px; height: 800px;
+    z-index: 1; opacity: 0.2;
+    background-image: url(../img/logoHimatif.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+} .titlee .navLink {
+    font-size: 20px;
+    padding: 10px 10px;
+} .titlee .arrowDown {
+    width: 20px;
+    height: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    #homeLogo {
+        width: 300px;
+        height: auto;
+    } .undertow {
+        display: none;
+    }
+} @media screen and (max-width: 576px) {
+    #homeLogo {
+        width: 300px;
+        height: auto;
+    } .header {
+        flex-direction: column-reverse;
+        height: 100vh; align-items: center;
+        justify-content: start;
+        text-align: center;
+    } .titlee {
+        align-items: center;
+    } .titleHead {
+        font-size: 40px;
+    } .text {
+        font-size: 15px;
+    }
+}
