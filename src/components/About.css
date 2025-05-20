@@ -41,6 +41,31 @@
     margin-bottom: 1%;
 }
 
+@media screen and (max-width: 1060px) {
+    .Box {
+        height: 100vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 50% max-content 1fr;
+        grid-template-areas: "img" "title" "text";
+        justify-items: center;
+        text-align: center;
+        padding: 5% 0; 
+        margin-bottom: 5%;
+    } .box .title {
+        font-size: 45px;
+    } .box .text {
+        font-size: 13px;
+        width: 90%;
+    }
+    .list {
+        grid-template-columns: 1fr;
+        grid-template-rows: 25% 1fr;
+    } .list .text {
+        width: 100%;
+    }
+    
+}
+
 @media screen and (max-width: 768px) { 
     .about {
         height: 200vh;
@@ -59,6 +84,8 @@
     } .box .text {
         justify-self: center;
         align-self: center;
+        font-size: 20px;
+        width: 90%;
     }   
 } @media screen and (max-width: 576px) {
     .list {
@@ -66,5 +93,7 @@
         grid-template-rows: 25% 1fr;
     } .list .text {
         width: 100%;
-    } 
+    } .box .text {
+        font-size: 17px;
+    }
 }

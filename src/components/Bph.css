@@ -56,9 +56,60 @@
     text-align: right;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 1060px) {
     .Bph {
         padding: 0 2%;
     }
     
+}
+
+@media screen and (max-width: 900px) {
+    .Bph {
+        padding: 0 2%;
+    }
+
+    .titleMedium {
+    font-size: 50px;
+    font-weight: bold;
+    }   .deskripsiBold {
+        font-weight: bold;
+        font-size: 25px;
+    } .deskripsiAbu {
+        font-size: 15px;
+        color: grey;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .Bph {
+        padding: 0 2%;
+    }
+    
+    .Bph .card {
+        width: 100%;
+        flex-direction: column;
+        row-gap: 20px;
+        height: max-content;
+        margin-top: 20%;
+    }
+
+    .Bph .card.right, .Bph .card {
+        align-self: center;
+    } .Bph .card.right img {
+        order: 0;
+    } .Bph .card.right .bphDesc, .Bph .card .bphDesc  {
+        text-align: center;
+    }
+
+    .titleMedium {
+    font-size: 50px;
+    font-weight: bold;
+} .deskripsiBold {
+    font-weight: bold;
+    font-size: 20px;
+} .deskripsiAbu {
+    font-size: 15px;
+    color: grey;
+}
 }
