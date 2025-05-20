@@ -1,0 +1,57 @@
+.Bph * {
+    font-family: "Roboto", sans-serif;
+}
+.titleMedium {
+    font-size: 70px;
+    font-weight: bold;
+} .deskripsiBold {
+    font-weight: bold;
+    font-size: 40px;
+} .deskripsiAbu {
+    font-size: 20px;
+    color: grey;
+}
+
+.Bph {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    padding: 0 10%;
+
+    width: 100dvw;
+    height: max-content;
+    /* background-color: #00235e; */
+} .Bph .title {
+    align-self: center;
+}
+
+.Bph .card {
+    width: 800px;
+    height: 600px;
+    overflow: hidden;
+
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    column-gap: 20px;
+} .Bph .card .cardDesc{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 20px;
+} .Bph .card img {
+    border-radius: 20px;
+}
+
+.Bph .card.right {
+    align-self: end;
+} .Bph .card.right img {
+    order: 2;
+} .Bph .card.right .bphDesc  {
+    text-align: right;
+}
