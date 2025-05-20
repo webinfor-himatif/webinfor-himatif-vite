@@ -16,8 +16,8 @@ const Footer = () => {
                     <ul>
                         <li><p className='title'>HIMATIF - UMG</p></li>
                         <li><p className='text' style={{fontWeight: 'bold'}}>Contact Person</p></li>
-                        <li><p className='text trans'>Jane Doe - 08123456789</p></li>
-                        <li><p className='text trans'>John Doe - 07765432102</p></li>   
+                        <li><p className='text trans'>Rista ~ Sekretaris 1 - 08123456789</p></li>
+                        <li><p className='text trans'>Melin ~ Sekretaris 2 - 07765432102</p></li>   
                     </ul>
                     <ul>
                         <li><p className='title'>Alamat</p></li>

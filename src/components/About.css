@@ -27,6 +27,7 @@
     justify-self: start;
     align-self: start ;
     color: white;
+    letter-spacing: 1px;
 }
 .list {
     display: grid;
@@ -46,11 +47,12 @@
     } .box {
         height: 100vh;
         grid-template-columns: 1fr;
-        grid-template-rows: 70% max-content 1fr;
+        grid-template-rows: 50% max-content 1fr;
         grid-template-areas: "img" "title" "text";
         justify-items: center;
         text-align: center;
         padding: 5% 0; 
+        margin-bottom: 5%;
     } .box .title {
         justify-self: center;
         align-self: end;

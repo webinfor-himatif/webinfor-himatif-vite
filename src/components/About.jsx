@@ -5,9 +5,9 @@ const About = () => {
         <>
             <div className="about" id='about'>
                 <div className="box" data-aos="fade-up">
-                    <img src={logoText} alt=""  style={{width: 300, height: 300, gridArea: 'img'}} />
+                    <img src={logoText} alt=""  style={{width: 200, height: "auto", gridArea: 'img'}} />
                     <p className="title fw" data-aos="fade-up" data-aos-delay="150">Apa itu himatif?</p>
-                    <p className="text" data-aos="fade-up" data-aos-delay="100">HIMATIF adalah Himpunan Mahasiswa Teknik Informatika yang memadahi kegiatan mahasiswa jurusan Teknik Informatika Universitas Muhammadiyah Gresik</p>
+                    <p className="text" data-aos="fade-up" data-aos-delay="100">HIMATIF adalah Himpunan Mahasiswa Teknik Informatika yang memadahi kegiatan mahasiswa jurusan Teknik Informatika Universitas Muhammadiyah Gresik. Mencakup hubungan internal dan eksternal kampus dengan himatif, penelitian dan pengembangan  baik dalam lingkup akademik maupun nonakademik. Serta keluarga erat yang bertambah setiap waktu</p>
                 </div>
                 <div className="list">
                     <ul>
